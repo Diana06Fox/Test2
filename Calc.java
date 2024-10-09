@@ -32,7 +32,7 @@ public class Calc {
             if (n1>0 && n1 < 11 && n2>0 && n2 < 11) {
                 switch (znak_operacii) {
                     case '+':
-                        result =String.valueOf(n2+" "+(n1 + n2));
+                        result =String.valueOf(n1 + n2);
                         break;
                     case '-':
                         result = String.valueOf(n1 - n2);
@@ -51,7 +51,7 @@ public class Calc {
         }
 
         catch (RuntimeException e) {
-            result = "Введенная строка, не соответствует одной из вышеописанных арифметических операций";}
+            result = "Введенная строка не соответствует одной из вышеописанных арифметических операций";}
         catch (IOException e){
             result="Введеный пример не соответствует условиям введения чисел в диапозоне от 1 до 10";
         }
